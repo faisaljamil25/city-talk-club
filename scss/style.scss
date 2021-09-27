@@ -1,5 +1,13 @@
-@import './base';
 @import './variables';
-@import './typography';
+@import './base';
 @import './mixins';
+@import './placeholder';
+
+@import './buttons';
+@import './typography';
+@import './social-icon';
+@import './circles';
+
 @import './navbar';
+@import './main-container';
+@import './index';
