@@ -1561,7 +1561,7 @@ footer {
   /*margin-top:150px;*/
   margin-top: 30px;
   background-color: white;
-  height: 380px;
+  height: 440px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1595,8 +1595,8 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin: 20px;
-  height: 380px;
-  width: 24%;
+  height: 420px;
+  width: 38%;
   background-color: #181616;
   border-radius: 20px;
 }
@@ -1615,13 +1615,13 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 380px;
+  height: 420px;
   width: 100%;
 }
 
 .posters-image img {
   width: 100%;
-  height: 380px;
+  height: 420px;
   overflow: hidden;
   border-radius: 10px;
   /*border-top-left-radius: 10px;
@@ -1633,21 +1633,27 @@ footer {
     display: none;
   }
   .main-posters {
-    height: 340px;
+    height: 420px;
     margin-bottom: 50px;
   }
   .posters {
-    height: 360px;
-    width: 50%;
+    height: 420px;
+    width: 290px;
+    /*height:360px;
+        width:50%;*/
     margin: 5px;
   }
   .posters-image {
-    height: 360px;
-    width: 100%;
+    height: 420px;
+    width: 290px;
+    /*height:360px;
+        width:100%;*/
   }
   .posters-image img {
-    width: 100%;
-    height: 360px;
+    height: 420px;
+    width: 290px;
+    /*width:100%;
+        height:360px;*/
     overflow: hidden;
     border-radius: 10px;
   }
@@ -1655,24 +1661,24 @@ footer {
 
 @media screen and (max-width: 768px) {
   .main-posters {
-    height: 340px;
+    height: 400px;
     margin-bottom: 50px;
   }
   .third, .resp, .second {
     display: none;
   }
   .posters {
-    height: 350px;
-    width: 45%;
+    height: 400px;
+    width: 280px;
     margin: 10px;
   }
   .posters-image {
-    height: 350px;
+    height: 400px;
     width: 100%;
   }
   .posters-image img {
     width: 100%;
-    height: 350px;
+    height: 400px;
     overflow: hidden;
     border-radius: 10px;
   }
@@ -1852,15 +1858,15 @@ footer {
     width: 100%;
     height: 60px;
     background: white;
-    margin-top: 120px;
+    margin-top: 100px;
     text-align: center;
   }
   .event-container {
     display: -ms-grid;
     display: grid;
-    height: 800px;
+    height: 950px;
     width: 100%;
-        grid-template-areas: 'title title' 'intro intro' 'speaker1 speaker2' 'details details';
+        grid-template-areas: 'title' 'intro' 'speaker1' 'speaker2' 'details';
     background: #8d0202;
     border-radius: 20px;
     margin: 0px auto;
@@ -1873,7 +1879,6 @@ footer {
   .event-head {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: title;
     text-align: center;
     letter-spacing: 0px;
@@ -1881,7 +1886,6 @@ footer {
   .event-intro {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: intro;
     text-align: center;
   }
@@ -1894,25 +1898,31 @@ footer {
         align-content: center;
   }
   .event-speaker1 img {
-    width: 30%;
+    width: 25%;
     float: left;
     padding-right: 10px;
   }
+  .name {
+    padding-top: 10px;
+  }
+  .awards {
+    text-align: justify;
+    padding-top: 20px;
+  }
   .event-speaker2 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
     grid-area: speaker2;
     background-color: grey;
   }
   .event-speaker2 img {
-    width: 30%;
-    float: left;
-    padding-right: 10px;
+    width: 25%;
+    float: right;
+    padding-left: 10px;
   }
   .event-details {
-    -ms-grid-row: 4;
+    -ms-grid-row: 5;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: details;
     text-align: center;
   }
@@ -1923,21 +1933,53 @@ footer {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    margin-top: 60px;
+    margin-top: 80px;
   }
   .event-container {
         grid-template-areas: 'title' 'intro' 'speaker1' 'speaker2' 'details';
-    height: 900px;
+    height: 990px;
     padding-top: 20px;
     margin-top: 30px;
   }
   .event-container > .event-speaker1, .event-speaker2 {
     padding: 15px;
   }
+  .event-head {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: title;
+  }
+  .event-intro {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: intro;
+  }
+  .name {
+    padding-top: 10px;
+  }
+  .awards {
+    text-align: justify;
+    padding-top: 10px;
+  }
+  .event-speaker1 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: speaker1;
+  }
+  .event-speaker2 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: speaker2;
+  }
   .event-speaker2 img {
     width: 25%;
     float: right;
     padding-left: 10px;
+  }
+  .event-details {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: details;
   }
 }
 
@@ -2006,8 +2048,8 @@ footer {
   .sub {
     margin: 5px auto;
     /*padding: 30px 0;*/
-    height: 400px;
-    width: 310px;
+    height: 440px;
+    width: 300px;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
@@ -2043,7 +2085,7 @@ footer {
   .sub {
     margin: 5px auto;
     /*padding: 30px 0;*/
-    height: 400px;
+    height: 440px;
     width: 320px;
     border-radius: 10px;
     overflow: hidden;
