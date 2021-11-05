@@ -1577,7 +1577,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 
 .posters {
@@ -1629,12 +1629,12 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-  .resp, .third {
+  .resp,
+  .third {
     display: none;
   }
   .main-posters {
     height: 420px;
-    margin-bottom: 50px;
   }
   .posters {
     height: 420px;
@@ -1664,7 +1664,9 @@ footer {
     height: 400px;
     margin-bottom: 50px;
   }
-  .third, .resp, .second {
+  .third,
+  .resp,
+  .second {
     display: none;
   }
   .posters {
@@ -1788,7 +1790,7 @@ footer {
   display: grid;
   height: 640px;
   width: 100%;
-      grid-template-areas: 'title title' 'intro intro' 'speaker1 speaker2' 'details details';
+      grid-template-areas: 'title title' 'intro intro' 'speaker1 speaker2' 'details details';
   background: #8d0202;
   border-radius: 20px;
   margin: 0px auto;
@@ -1866,7 +1868,7 @@ footer {
     display: grid;
     height: 950px;
     width: 100%;
-        grid-template-areas: 'title' 'intro' 'speaker1' 'speaker2' 'details';
+        grid-template-areas: 'title' 'intro' 'speaker1' 'speaker2' 'details';
     background: #8d0202;
     border-radius: 20px;
     margin: 0px auto;
@@ -1936,7 +1938,7 @@ footer {
     margin-top: 80px;
   }
   .event-container {
-        grid-template-areas: 'title' 'intro' 'speaker1' 'speaker2' 'details';
+        grid-template-areas: 'title' 'intro' 'speaker1' 'speaker2' 'details';
     height: 990px;
     padding-top: 20px;
     margin-top: 30px;
