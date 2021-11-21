@@ -63,7 +63,11 @@ footer {
 .footer-details-social {
   width: 184px;
   height: 24px;
-  @include flex(inline-flex, row, space-between, center);
+  @include flex(inline-flex, row, center, center);
+}
+
+.footer-details-social a {
+  padding: 25px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -133,7 +137,7 @@ footer {
     @include flex(flex, column, space-between, center);
   }
 
-  .footer-details-social {
-    padding-top: 30px;
-  }
+  // .footer-details-social {
+  //   padding-top: 30px;
+  // }
 }
