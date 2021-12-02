@@ -1817,7 +1817,7 @@ footer {
 
 .event-container {
   width: 100%;
-      grid-template-areas: 'title title' 'intro intro' 'speaker1 speaker2' 'details details';
+      grid-template-areas: 'title title' 'intro intro' 'speaker1 speaker2' 'details details';
   background: #8d0202;
   border-radius: 20px;
   margin: 0px auto;
